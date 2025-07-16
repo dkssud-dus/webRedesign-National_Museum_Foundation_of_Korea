@@ -1,0 +1,219 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  LoginModal
+======================== */
+.LoginModal__overlay{
+  width: 100vw; height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 10000;
+  background-color: $blackOpacity70;
+  .LoginModal{
+    width: 500px; height: 680px;
+    padding: 30px 50px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $blackOpacity50;
+    background-color: $white;
+    .LoginModal__titleBox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .LoginModal__title{
+        font-family: $fontHeading; font-weight: bold;
+        margin-left: auto;
+        font-size: $text-3xl;
+        text-align: center;
+        color: $primaryDeep;
+      }
+      .LoginModal__closeButton{
+        margin-left: auto;
+        background-color: transparent;
+        display: block;
+        cursor: pointer;
+        font-size: $text-lg;
+        svg{
+          transition: .35s;
+        }
+        &:hover{
+          svg{
+            fill: $primaryDefault;
+          }
+        }
+      }
+    }
+    .LoginModal__form{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .LoginModal__input-group{
+        .LoginModal__input{
+          width: 400px; height: 70px;
+          border-radius: 50px;
+          font-size: 1rem;
+          background-color: transparent;
+          border: 1px solid $primaryDefault;
+          transition: .35s;
+          &:focus{
+            box-shadow: 0 0 2px 1px $primaryDefault;
+            &::placeholder{
+              color: transparent;
+            }
+          }
+          &::placeholder{
+            font-size: 1rem;
+            color: $textSecondary;
+          }
+          &.LoginModal__input--id{}
+          &.LoginModal__input--password{}
+        }
+      }
+      .LoginModal__help-link{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        svg{
+          fill: $primaryDefault;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .LoginModal__loginButton{
+        width: 400px; height: 70px;
+        background-color: transparent;
+        border: 1px solid $primaryDefault;
+        font-size: $text-lg; font-weight: bold;
+        color: $primaryDefault;
+        cursor: pointer;
+        transition: .35s;
+        &:hover{
+          background-color: $primaryDefault;
+          color: $white;
+        }
+      }
+      .LoginModal__remember-me{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .LoginModal__remember-me-checkbox{
+          appearance: none;
+          width: $text-lg; height: $text-lg;
+          border-radius: 10px;
+          border: 1px solid $primaryDefault;
+          accent-color: $primaryDefault;
+          &:checked{
+            background-color: $primaryDefault;
+          }
+        }
+      }
+    }
+    .LoginModal__signup{
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      .LoginModal__signup-text{}
+      .LoginModal__signup-link{
+        font-weight: bold;
+        text-decoration: underline;
+        color: $primaryDefault;
+      }
+    }
+    .LoginModal__social-login{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .LoginModal__social-login-title{
+        margin-bottom: 15px;
+        font-size: $text-lg; font-weight: bold;
+        color: $primaryDeep;
+      }
+      .LoginModal__social-list{
+        display: flex;
+        gap: 30px;
+        .LoginModal__social-item{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          .LoginModal__social-icon{
+            width: 50px; height: 50px;
+            display: flex;
+            align-items: center; justify-content: center;
+            border-radius: 20px;
+            border: 1px solid $textPrimary;
+            transition: .35s;
+            .LoginModal__social-icon-image{
+              transition: .35s;
+            }
+          }
+          .LoginModal__social-text{
+            margin-top: 10px;
+            display: block;
+            transition: .35s;
+          }
+          &:nth-child(1):hover{
+            .LoginModal__social-icon{
+              border: transparent;
+              background-color: #3b5998;
+              .LoginModal__social-icon-image{
+                filter: brightness(100);
+              }
+            }
+            .LoginModal__social-text{
+              color: #3b5998;
+            }
+          }
+          &:nth-child(2):hover{
+            .LoginModal__social-icon{
+              border: transparent;
+              background-color: #00acee;
+              .LoginModal__social-icon-image{
+                filter: brightness(100);
+              }
+            }
+            .LoginModal__social-text{
+              color: #00acee;
+            }
+          }
+          &:nth-child(3):hover{
+            .LoginModal__social-icon{
+              border: transparent;
+              background-color: #F7E600;
+              .LoginModal__social-icon-image{
+                filter: brightness(100);
+              }
+            }
+            .LoginModal__social-text{
+              color: #F7E600;
+            }
+          }
+          &:nth-child(4):hover{
+            .LoginModal__social-icon{
+              border: transparent;
+              background-color: #03C75A;
+              .LoginModal__social-icon-image{
+                filter: brightness(100);
+              }
+            }
+            .LoginModal__social-text{
+              color: #03C75A;
+            }
+          }
+        }
+      }
+    }
+  }
+}

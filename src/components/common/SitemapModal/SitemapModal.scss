@@ -1,0 +1,27 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+.SitemapModal__overlay{
+  .SitemapModal{
+    .SitemapModal__titleBox{
+      .SitemapModal__title{}
+      .SitemapModal__closeButton{
+        svg{}
+      }
+    }
+    .SitemapModal_content{
+      .SitemapModal__nav{
+        .SitemapModal__nav-item{
+          .SitemapModal__nav-title{}
+          .SitemapModal__subnav{
+            .SitemapModal__subnav-item{
+              .SitemapModal__nav-link{}
+            }
+          }
+        }
+      }
+    }
+  }
+}
