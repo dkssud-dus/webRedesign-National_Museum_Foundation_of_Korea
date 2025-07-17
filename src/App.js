@@ -5,12 +5,12 @@ import React, { useState } from 'react';
 
 // component
 import Header from './components/common/Header/Header';
-import Footer from './components/common/Footer';
+import Footer from './components/common/Footer/Footer';
 import LoginModal from './components/common/LoginModal/LoginModal';
 import SitemapModal from './components/common/SitemapModal/SitemapModal';
 
 // pages
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Directions from './pages/Directions';
 import ExhibitionPerformance from './pages/ExhibitionPerformance';
 import Schedule from './pages/Schedule';

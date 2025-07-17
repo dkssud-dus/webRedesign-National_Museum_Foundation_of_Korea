@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Badge = () => {
+const Subvisual = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Badge = () => {
   )
 }
 
-export default Badge
+export default Subvisual

@@ -1,0 +1,19 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Section Title
+======================== */
+.SectionTitle{
+  .SectionTitle__main{
+    font-family: $fontHeading;
+    font-size: $text-4xl;
+    color: $primaryDeep;
+  }
+  .SectionTitle__sub{
+    margin-top: 5px;
+    font-size: $text-lg;
+  }
+}

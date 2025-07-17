@@ -13,7 +13,7 @@ import { BsXLg } from 'react-icons/bs';
 import './SitemapModal.scss'
 
 /* ========================
-  
+  SitemapModal
   ======================== */
 const SitemapModal = ({ onClose }) => {
   /* ========================

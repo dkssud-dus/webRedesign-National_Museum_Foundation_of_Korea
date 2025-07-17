@@ -16,7 +16,7 @@ import { BsGlobe, BsList } from 'react-icons/bs';
 import './Header.scss'
 
 /* ========================
-  
+  Header
 ======================== */
 const Header = ({ openLoginModal, openSitemapModal}) => {
   // Nav depth1 → depth2 control
@@ -38,7 +38,7 @@ const Header = ({ openLoginModal, openSitemapModal}) => {
         {/* brand */}
         <div className="Header__brand">
           <Link to="/" className='Header__logo-link'>
-            <img src={logo} alt="logo" className='Header__logo-image'/>
+            <img src={logo} alt="국립박물관문화재단 로고" className='Header__logo-image'/>
           </Link>
         </div>
 
@@ -52,7 +52,7 @@ const Header = ({ openLoginModal, openSitemapModal}) => {
               onMouseLeave={handleMouseLeave}
             >
               <NavLink to="*" className='Header__nav-link'>재단소개</NavLink>
-              <ul className='Header__nav-depth2'>
+              <ul className='Header__nav-depth2' >
                 <li className='Header__nav-item'>
                   <NavLink to="*" className='Header__nav-link'>재단 개요</NavLink>
                 </li>

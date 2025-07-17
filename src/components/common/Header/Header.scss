@@ -54,6 +54,7 @@
               max-height: 400px;
               opacity: 1;
               overflow: visible;
+              pointer-events: auto;
             }
           }
           .Header__nav-depth2{
@@ -62,13 +63,15 @@
             max-height: 0;
             padding: 1rem .5rem;
             position: absolute;
-            top: 101%; left: 50%; transform: translateX(-50%);
+            top: 101%; left: 50%; 
+            transform: translateX(-50%);
             z-index: 100;
             background-color: $whiteOpacity70;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px); 
             border: 1px solid $white;
             border-radius: 40px;
             transition: .5s;
+            pointer-events: none;
             .Header__nav-item{
               .Header__nav-link{
                 color: $textPrimary;

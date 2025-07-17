@@ -16,7 +16,7 @@ import { BsXLg, BsQuestionCircle } from 'react-icons/bs';
 import './LoginModal.scss'
 
 /* ========================
-  
+  LoginModal
 ======================== */
 const LoginModal = ({ onClose }) => {
   /* ========================

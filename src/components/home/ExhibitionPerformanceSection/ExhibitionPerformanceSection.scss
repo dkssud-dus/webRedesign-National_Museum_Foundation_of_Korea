@@ -1,0 +1,31 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Exhibition Performance Section
+======================== */
+.ExhibitionPerformance{
+  display: flex;
+  flex-direction: column;
+  > .ExhibitionPerformance__container{
+    display: flex;
+    .ExhibitionPerformance__leftBox{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .CustomLinkButton{
+        margin: 0;
+      }
+    }
+    .ExhibitionPerformance__rightBox{
+      flex: 1;
+    }
+  }
+  .ExhibitionPerformance__DateLine{
+    .ExhibitionPerformance__container{}
+  }
+}
