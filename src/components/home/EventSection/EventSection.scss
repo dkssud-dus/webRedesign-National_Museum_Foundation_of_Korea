@@ -1,0 +1,69 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Event Section
+======================== */
+.Event{
+  .Event__background{
+    height: 600px;
+    background-color: $black;
+    .Event__container{
+      height: 600px;
+      display: flex;
+      .Event__leftBox{
+        width: 50%; height: 400px;
+        margin: auto;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .SectionTitle{
+          .SectionTitle__main{
+            color: $white;
+          }
+          .SectionTitle__sub{
+            color: $white;
+          }
+        }
+        .Event__active-info{
+          .Event__active-titleBox{
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .Event__active-title{
+              font-size: $text-2xl;
+              color: $white;
+            }
+          }
+          .Event__active-desc{
+            height: 50px;
+            display: -webkit-box;   
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            color: $white;
+          }
+        }
+        .CustomLinkButton{
+          margin: 0;
+          margin-bottom: 30px;
+          border: 1px solid $white;
+          background-color: transparent;
+          color: $white;
+          &:hover{
+            background-color: $white;
+            color: $primaryDefault;
+          }
+        }
+      }
+      .Event__rightBox{
+        width: 50%;
+        margin: auto;
+      }
+    }
+  }
+}

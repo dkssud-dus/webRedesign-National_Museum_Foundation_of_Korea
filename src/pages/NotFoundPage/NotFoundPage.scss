@@ -1,0 +1,38 @@
+/* ========================
+  Import
+======================== */
+@import '../../styles/variables.scss';
+
+/* ========================
+  Not Found Page
+======================== */
+.NotFoundPage{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  .NotFoundPage__notice{
+    display: flex;
+    align-items: center;
+    .NotFoundPage__notice-text{
+      font-family: $fontHeading;
+      font-size: 96px;
+      color: $primaryDefault;
+    }
+    .NotFoundPage__notice-image{
+    }
+  }
+  .NotFoundPage__title{
+    font-family: $fontHeading;
+    font-size: $text-4xl;
+    color: $primaryDeep
+  }
+  .NotFoundPage__desc{
+    text-align: center;
+  }
+  .CustomLinkButton{
+    margin: 0;
+  }
+}

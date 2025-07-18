@@ -6,6 +6,9 @@ import React from 'react'
 // Components
 import Badge from '../Badge/Badge'
 
+// React-router-dom
+import { Link } from 'react-router-dom'
+
 // SCSS
 import './ExhibitionPerformanceCard.scss'
 
@@ -18,7 +21,7 @@ const ExhibitionPerformanceCard = ({ item }) => {
   Return
   ======================== */
   return (
-    <div className='ExhibitionPerformanceCard'>
+    <Link to="/exhibitionPerformance" className='ExhibitionPerformanceCard'>
       <div className="ExhibitionPerformanceCard__imageBox">
         <img src={item.Poster} alt={item.Name} className="ExhibitionPerformanceCard__image"/>
       </div>
@@ -33,7 +36,7 @@ const ExhibitionPerformanceCard = ({ item }) => {
           {item.StartDate} - {item.EndDate}
         </span>
       </div>
-    </div>
+    </Link>
   )
 }
 

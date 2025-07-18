@@ -16,7 +16,7 @@ import ExhibitionPerformance from './pages/ExhibitionPerformance';
 import Schedule from './pages/Schedule';
 import Events from './pages/Events';
 import Notices from './pages/Notices';
-import NotFoundPage from './pages/NotFoundPage ';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage ';
 
 // react-router-dom
 import { Routes, Route } from 'react-router-dom'

@@ -3,7 +3,7 @@
 ======================== */
 import React from 'react'
 
-// components
+// Components
 import MainVisualSection from '../../components/home/MainVisualSection/MainVisualSection'
 import ExhibitionPerformanceSection from '../../components/home/ExhibitionPerformanceSection/ExhibitionPerformanceSection'
 import NoticeSection from '../../components/home/NoticeSection/NoticeSection'

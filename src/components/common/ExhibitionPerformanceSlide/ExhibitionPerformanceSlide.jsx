@@ -1,7 +1,7 @@
 /* ========================
   Import
 ======================== */
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 // Components
 import ExhibitionPerformanceCard from '../ExhibitionPerformanceCard/ExhibitionPerformanceCard';
@@ -17,12 +17,21 @@ import './ExhibitionPerformanceSlide.scss'
   Exhibition Performance Section
 ======================== */
 const ExhibitionPerformanceSlide = ({ exhibitionPerformance }) => {
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.update();
+      swiperRef.current.swiper.slideTo(0, 0);
+    }
+  }, [exhibitionPerformance]);
 
   /* ========================
   Return
   ======================== */
   return (
     <Swiper
+      ref={swiperRef}
       spaceBetween={30}
       slidesPerView={2}
       onSlideChange={() => console.log('slide change')}
@@ -30,7 +39,7 @@ const ExhibitionPerformanceSlide = ({ exhibitionPerformance }) => {
     >
       {exhibitionPerformance.length > 0 ? (
         exhibitionPerformance.map((item) => (
-          <SwiperSlide key={item.id}>
+          <SwiperSlide key={item.Id}>
             <ExhibitionPerformanceCard item={item} />
           </SwiperSlide>
         ))
