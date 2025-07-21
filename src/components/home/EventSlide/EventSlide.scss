@@ -1,0 +1,15 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Event Slide
+======================== */
+.EventSlide{
+  width: 960px; height: 400px;
+  .swiper-wrapper{
+    .swiper-slide{
+    } 
+  }
+}

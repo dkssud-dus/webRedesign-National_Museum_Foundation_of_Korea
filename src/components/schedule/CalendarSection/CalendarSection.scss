@@ -1,0 +1,120 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Calendar Section
+======================== */
+.Calendar{
+  width: 540px; height: 580px;
+  padding: 30px;
+  border: 1px solid $primaryDefault;
+  .react-calendar{
+    width: 100%; height: 96%;
+    border: none;
+    .react-calendar__navigation{
+      height: 50px;
+      border-bottom: 2px solid $primaryDeep;
+      .react-calendar__navigation__arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $text-4xl;
+        transition: .35s;
+        color: $primaryDeep;
+        &:hover{
+          background-color: transparent;
+        }
+      }
+      .react-calendar__navigation__label{
+        transition: .35s;
+        pointer-events: none;
+        &:hover{
+          background-color: transparent;
+        }
+        .react-calendar__navigation__label__labelText{
+          font-family: $fontHeading;
+          font-size: $text-2xl;
+          color: $primaryDeep;
+        }
+      }
+    }
+    .react-calendar__viewContainer{
+      height: 400px;
+
+      .react-calendar__month-view{
+        .react-calendar__tile{
+          height: 60px;
+          abbr{
+            font-size: $text-base;
+          }
+        }
+        .react-calendar__month-view__weekdays{
+          .react-calendar__month-view__weekdays__weekday{
+            margin-bottom: 10px;
+            abbr {
+              font-size: $text-xl;
+              text-decoration: none;
+            }
+          }
+        }
+        .react-calendar__month-view__days{
+          .react-calendar__tile{
+            transition: .35s;
+            abbr {
+              text-decoration: none;
+              transition: .35s;
+            }
+            &:hover{
+              background-color: $primaryDefaultOpacity50;
+            }
+            &.is-past-date{
+              background-color: $textSecondaryOpacity50;
+              &.react-calendar__tile--active{
+                background-color: $primaryDefault;
+              }
+              abbr{
+                color: $white;
+              }
+            }
+            &--now{
+              border: 3px solid $primaryDeep;
+              background-color: transparent;
+            }
+            &--active{
+              background-color: $primaryDefault;
+              abbr{
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Calendar__announce{
+    .Calendar__announce-list{
+      display: flex;
+      gap: 20px;
+      .Calendar__announce-item{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        .Calendar__announce-block{
+          width: 15px; height: 15px;
+          &.Calendar__announce-block--today{
+            border: 3px solid $primaryDeep;
+          }
+          &.Calendar__announce-block--active{
+            background-color: $primaryDefault;
+          }
+          &.Calendar__announce-block--holiday{
+            background-color: $textSecondaryOpacity50;
+          }
+        }
+        .Calendar__announce-text{}
+      }
+    }
+  }
+}

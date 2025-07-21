@@ -1,0 +1,14 @@
+/* ========================
+  Import
+======================== */
+@import '../../styles/variables.scss';
+
+/* ========================
+  Exhibition Performance Section
+======================== */
+.ExhibitionPerformancePage{
+  .ExhibitionPerformance__container{
+    display: flex;
+    flex-direction: column;
+  }
+}

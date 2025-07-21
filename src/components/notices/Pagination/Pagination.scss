@@ -1,0 +1,39 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Pagination
+======================== */
+.Pagination{
+  margin-top: 30px;
+  width: 1100px;
+  .Pagination__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .Pagination__item{
+      transition: .35s;
+      .Pagination__button{
+        width: 30px; height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        font-size: $text-xl;
+        transition: .35s;
+      }
+      &:hover{
+        background-color: $primaryDefaultOpacity50;
+      }
+      &.Pagination__item--active{
+        background-color: $primaryDefault;
+        .Pagination__button{
+          color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Notices List
+======================== */
+.NoticesList{
+  height: 100px;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: .35S;
+  .NoticesList__title{
+    width: 65%;
+    display: -webkit-box;   
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    font-size: $text-xl;
+    font-weight: normal;
+    transition: .32s;
+  }
+  .NoticesList__author{
+    width: 5%;
+    margin-left: auto;
+    display: -webkit-box;   
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    font-size: $text-sm;
+    color: $textSecondary;
+    transition: .32s;
+  }
+  .NoticesList__date{
+    font-size: $text-sm;
+    color: $textSecondary;
+    transition: .32s;
+  }
+  &:hover{
+    background-color: $primaryDefaultOpacity50;
+    .NoticesList__title{
+      color: $primaryDeep;
+    }
+    .NoticesList__author{
+      color: $white;
+    }
+    .NoticesList__date{
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Exhibition Performance Section
+======================== */
+.PerformanceExhibitionSection{
+  margin-bottom: 10vh;
+  > div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .PerformanceExhibition__category{
+      .PerformanceExhibition__title{
+        width: 350px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $text-2xl;
+      }
+      .CategoryFilterGroup{
+        display: flex;
+        flex-direction: column;
+        .CategoryFilterGroup__button{
+          width: 350px;
+        }
+      }
+    }
+    .swiper{
+      margin-left: 0;
+      margin-right: 0;
+      position: relative;
+      .ExhibitionPerformanceSlide__no-data{
+        position: absolute;
+        top: 50%; left: 50%; transform: translate(-50%, -50%);
+      }
+    }
+    .ExhibitionPerformanceSlide{
+    }
+  }
+  .PerformanceExhibition__exhibition{
+    .PerformanceExhibition__category{
+      order: 1;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Footer
+======================== */
+.Footer{
+  height: 540px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+  .Footer__logos{
+    .Footer__logo-list{
+      display: flex;
+      gap: 20px;
+      .Footer__logo-item{
+        img{}
+      }
+    }
+  }
+  .Footer__text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    .Footer__title{
+      font-family: $fontHeading;
+      font-size: $text-xl;
+      color: $white;
+    }
+    .Footer__information-group{
+      .Footer__information-item{
+        color: $white;
+      }
+    }
+    .Footer__copyright{
+      color: $white;
+    }
+  }
+  .Footer__symbol{
+    .Footer__symbol-image{
+      width: 200px; height: 200px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Notice Section
+======================== */
+.Notice{
+  display: flex;
+  .Notice__container{
+    .Notice__topBox{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .CustomLinkButton{
+        margin: 0;
+      }
+    }
+  }
+}

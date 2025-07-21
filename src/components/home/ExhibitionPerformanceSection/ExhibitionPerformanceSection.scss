@@ -1,0 +1,86 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Exhibition Performance Section
+======================== */
+.ExhibitionPerformance{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > .ExhibitionPerformance__container{
+    margin: 10vh auto;
+    display: flex;
+    .ExhibitionPerformance__leftBox{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .CustomLinkButton{
+        margin: 0;
+        margin-bottom: 50px;
+      }
+    }
+    .ExhibitionPerformance__rightBox{
+      flex: 1;
+    }
+  }
+  .ExhibitionPerformance__DateLine{
+    width: 100vw;
+    height: 200px;
+    background-color: $primaryDefaultOpacity50;
+    .ExhibitionPerformance__container{
+      height: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .ExhibitionPerformance__status{
+        width: 230px; height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .ExhibitionPerformance__current-date{
+          font-family: $fontHeading;
+          font-size: 96px;
+          color: $primaryDeep;
+        }
+        .ExhibitionPerformance__status-text{
+          font-family: $fontHeading;
+          font-size: $text-xl;
+          color: $primaryDeep;
+          word-spacing: 5px;
+        }
+      }
+      .ExhibitionPerformance__calendar-strip{
+        width: 72%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        .ExhibitionPerformance__calendar-day{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .ExhibitionPerformance__calendar-date{
+            font-size: $text-2xl;
+          }
+          .ExhibitionPerformance__calendar-weekday{}
+        }
+        .CustomLinkButton{
+          margin-left: 30px;
+          border: 1px solid $primaryDeep;
+          background-color: transparent;
+          color: $primaryDeep;
+          &:hover{
+            background-color: $primaryDeep;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

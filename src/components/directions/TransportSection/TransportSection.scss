@@ -1,0 +1,85 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Transport Section
+======================== */
+.Transport{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  .Transport__category{
+    .Transport__category-list{
+      .Transport__category-item{
+        .Transport__category-button{
+          width: 350px; height: 80px;
+          display: block;
+          border: 2px solid transparent;
+          background-color: $white;
+          font-size: $text-2xl;
+          transition: .35s;
+          cursor: pointer;
+          &:hover{
+            color: $primaryDefault;
+          }
+          &.Transport__category-button--active{
+            border: 2px solid $primaryDefault;
+            font-weight: bold;
+            color: $primaryDefault
+          }
+        }
+      }
+    }
+  }
+  .Transport__announce{
+    width: 725px; height: 240px;
+    padding: 10px;
+    background-color: $white;
+    .Transport__announce-list{
+      height: 100%;
+      .Transport__announce-item{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .Transport__announce-way-list{
+          .Transport__announce-way-item{
+            .Transport__announce-way-title{
+              margin-bottom: 5px;
+              color: $primaryDefault
+            }
+            .Trnasport__announce-way-desc{
+              margin-bottom: 15px;
+            }
+          }
+        }
+        &.Transport__announce-subway{
+          .Transport__announce-way-list{
+            .Transport__announce-way-item{
+              margin-left: 20px;
+              list-style: decimal;
+            }
+          }
+          .Transport__announce-openTime-title{
+            font-weight: bold;
+            color: $primaryDefault;
+          }
+          .Transport__anounce-openTime-list{
+            .Transport__announce-openTime-item{
+              width: 300px;
+              display: flex;
+              align-items: end;
+              justify-content: space-between;
+              b{
+                font-size: $text-2xl;
+                color: $primaryDefault;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

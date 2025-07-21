@@ -1,0 +1,52 @@
+/* ========================
+  Import
+======================== */
+@import './fonts.scss';
+
+/* ========================
+  Colors
+======================== */
+$white: #FBFBFB;
+$black: #191818;
+
+$whiteOpacity90: rgba($white, 0.9);
+$whiteOpacity70: rgba($white, 0.7);
+$whiteOpacity50: rgba($white, 0.5);
+
+$blackOpacity70: rgba($black, 0.7);
+$blackOpacity50: rgba($black, 0.5);
+$blackOpacity30: rgba($black, 0.3);
+
+$primaryDefault: #679C80;
+$primaryDefaultOpacity50: rgba($primaryDefault, 0.5);
+$primaryDeep: #476C5B;
+
+$secondary: #426D8D;
+
+$accentDefault: #A1755E;
+$accentDeep: #943B41;
+
+$background: #FFFFFF;
+
+$textPrimary: #585657;
+$textSecondary: #9FA0A0;
+
+$textSecondaryOpacity50: rgba($textSecondary, 0.5);
+
+/* ========================
+  Font Family
+======================== */
+$fontBody: 'Pretendard-Regular', sans-serif;
+$fontHeading: '국립박물관문화재단클래식B', serif;
+
+/* ========================
+  Font Size (rem)
+======================== */
+$text-xs: 0.75rem;     // 12px
+$text-sm: 0.875rem;    // 14px
+$text-base: 1rem;      // 16px
+$text-lg: 1.125rem;    // 18px
+$text-xl: 1.25rem;     // 20px
+$text-2xl: 1.5rem;     // 24px
+$text-3xl: 1.875rem;   // 30px
+$text-4xl: 2.25rem;    // 36px

@@ -1,0 +1,65 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Social Card
+======================== */
+.SocialCard{
+  width: 320px; height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid $white;
+  transition: .35s;
+  .SocialCard__imageBox{
+    width: 270px; height: 270px;
+    position: relative;
+    .SocialCard__image{
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    &::after{
+      opacity: 0;
+      content: '';
+      width: 100%; height: 100%;
+      position: absolute;
+      top: 0; left: 0;
+      background-color: $blackOpacity50;
+      transition: .35s;
+    }
+  }
+  .SocialCard__textBox{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0; left: 0;
+    text-align: center;
+    .SocialCard__title{
+      opacity: 0;
+      width: 270px;
+      padding: 1rem;
+      font-weight: normal;
+      color: $white;
+      transition: .35s;
+      word-break: normal;
+    }
+  }
+  &:hover{
+    background-color: $blackOpacity70;
+    .SocialCard__imageBox{
+      &::after{
+        opacity: 1;
+      }
+    }
+    .SocialCard__textBox{
+      .SocialCard__title{
+        opacity: 1;
+      }
+    }
+  }
+}

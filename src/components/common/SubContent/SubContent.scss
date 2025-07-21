@@ -1,0 +1,21 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Sub Content
+======================== */
+.SubContent{
+  width: 1100px;
+  padding: 50px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom: 3px solid $primaryDeep;
+  .SubContent__title{
+    font-family: $fontHeading;
+    font-size: $text-4xl;
+    color: $primaryDeep;
+    text-align: center;
+  }
+}

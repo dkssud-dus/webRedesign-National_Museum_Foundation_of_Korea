@@ -1,0 +1,28 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Location Section
+======================== */
+.Location{
+  margin-top: 30px;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .Location__card{
+    width: 350px; height: 150px;
+    padding: 20px;
+    border: 1px solid $secondary;
+    .Location__name{
+      font-family: $fontHeading;
+      font-size: $text-2xl;
+      color: $secondary;
+    }
+    .Location__desc{
+      margin-top: 10px;
+    }
+  }
+}

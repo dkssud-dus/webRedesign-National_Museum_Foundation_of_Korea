@@ -1,0 +1,49 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Exhibition Performance Card
+======================== */
+.ExhibitionPerformanceCard{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  &:hover{
+    .ExhibitionPerformanceCard__imageBox{
+      background-color: $primaryDefault;
+    }
+  }
+  .ExhibitionPerformanceCard__imageBox{
+    width: 300px; height: 365px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $primaryDefault;
+    transition: .35s;
+    .ExhibitionPerformanceCard__image{
+      width: 200px; height: 280px;
+    }
+  }
+  .ExhibitionPerformanceCard__titleBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ExhibitionPerformanceCard__title{
+      width: 70%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      font-size: $text-2xl;
+      font-weight: bold;
+    }
+  }
+  .ExhibitionPerformanceCard__dateBox{
+    .ExhibitionPerformanceCard__date{
+      color: $textSecondary;
+    }
+  }
+}

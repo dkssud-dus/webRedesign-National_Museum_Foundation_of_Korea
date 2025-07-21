@@ -1,0 +1,50 @@
+/* ========================
+  Import
+======================== */
+@import '../../styles/variables.scss';
+
+/* ========================
+  Events
+======================== */
+.Events{
+  margin-bottom: 10vh;
+  .Events__container{
+    .Events__searchBox{
+      display: flex;
+      justify-content: space-between;
+      .Events__filtering{
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primaryDefault;
+        font-size: $text-2xl; font-weight: bold;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+    .Events__content{
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      .CategoryFilterGroup{
+        display: flex;
+        flex-direction: column;
+        .CategoryFilterGroup__button{
+          width: 200px;
+        }
+      }
+      .Events__list{
+        width: 870px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .Events__no-results{
+        width: 870px;
+        margin-top: 100px;
+        text-align: center;
+      }
+    }
+  }
+}

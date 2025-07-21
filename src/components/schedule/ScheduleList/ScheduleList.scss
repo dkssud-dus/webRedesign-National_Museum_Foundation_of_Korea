@@ -1,0 +1,65 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Schedule List
+======================== */
+.ScheduleList{
+  width: 540px; height: 580px;
+  padding: 30px;
+  border: 1px solid $primaryDefault;
+  .ScheduleList__titleBox{
+    height: 50px;
+    border-bottom: 2px solid $primaryDeep;
+    .ScheduleList__title{
+      padding-top: 8px;
+      display: block;
+      font-family: $fontHeading;
+      font-weight: normal;
+      font-size: $text-2xl;
+      text-align: center;
+      color: $primaryDeep;
+    }
+  }
+  .ScheduleList__itemList{
+    .ScheduleList__itemList-item{
+      height: 70px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: .35s;
+      .Badge{}
+      .ScheduleList__itemList-title{
+        width: 60%;
+        display: -webkit-box;   
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        font-weight: normal;
+        transition: .35s;
+      }
+      .ScheduleList__itemList-date{
+        margin-left: auto;
+        font-size: $text-sm;
+        color: $textSecondary;
+        transition: .35s;
+      }
+      &:hover{
+        background-color: $primaryDefaultOpacity50;
+        .ScheduleList__itemList-title{
+          color: $primaryDeep;
+        }
+        .ScheduleList__itemList-date{
+          color: $white;
+        }
+      }
+    }
+    .ScheduleList__no-data{
+      margin-top: 100px;
+      text-align: center;
+    }
+  }
+}

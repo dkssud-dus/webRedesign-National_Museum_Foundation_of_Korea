@@ -1,0 +1,15 @@
+/* ========================
+  Import
+======================== */
+@import '../../styles/variables.scss';
+
+/* ========================
+  Schedule
+======================== */
+.Schedule{
+  margin-bottom: 10vh;
+  .Schedule__container{
+    display: flex;
+    justify-content: space-between;
+  }
+}

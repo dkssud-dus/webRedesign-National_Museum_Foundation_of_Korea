@@ -1,0 +1,161 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Main visual
+======================== */
+.Mainvisual{
+  position: relative;
+  .Mainvisual__background{
+    width: 100vw; height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    &::after{
+      content:'';
+      width: 100vw; height: 100vh;
+      position: absolute;
+      top: 0; left: 0;
+      background: linear-gradient(transparent, $blackOpacity50);
+    }
+    .Mainvisual__background-image{
+      width: inherit; height: inherit;
+      object-fit: cover;
+    }
+  }
+  .Mainvisual__container{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .Mainvisual__searchBox{
+      position: absolute;
+      top: 20vh; left: 50%; transform: translateX(-50%);
+      .Mainvisual__search-group{
+        position: relative;
+        display: flex;
+        .Mainvisual__input-group{
+          .Mainvisual__input{
+            width: 370px; height: 40px;
+            border-radius: 50px;
+            border: 1px solid $white;
+            background-color: $whiteOpacity50;
+            text-align: center;
+            color: $textPrimary;
+            font-size: 1rem;
+            transition: .35s;
+            backdrop-filter: blur(3px);
+            &::placeholder{
+              font-size: 1rem;
+              color: $textPrimary
+            }
+            &:focus{
+              box-shadow: 0 0 2px 1px $white;
+              &::placeholder{
+                color: transparent;
+              }
+            }
+          }
+        }
+        .Mainvisual__search-button{
+          width: 25px; height: 25px;
+          position: absolute;
+          top: 50%; right: 10px; transform: translateY(-50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          border: 1px solid $textPrimary;
+          background-color: $white;
+          cursor: pointer;
+          transition: .35s;
+          svg{
+            transition: .35s;
+          }
+          &:hover{
+            background-color: $textPrimary;
+            svg{
+              fill: $white;
+            }
+          }
+        }
+      }
+      .Mainvisual__search-tag-group{
+        margin-top: 10px;
+        .Mainvisual__search-tag-list{
+          display: flex;
+          justify-content: space-between;
+          .Mainvisual__search-tag-item{
+            .Mainvisual__search-tag-button{
+              cursor: pointer;
+              padding: 0 20px;
+              height: 30px;
+              border-radius: 50px;
+              background-color: $white;
+              font-size: $text-base;
+              transition: .35s;
+              &:hover{
+                background-color: $secondary;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .Mainvisual__catchphraseBox{
+      margin-bottom: 25vh;
+      .Mainvisual__catchphrase-main{
+        font-family: $fontHeading;
+        font-size: 64px;
+        font-weight: bold;
+        color: $white;
+      }
+      .Mainvisual__catchphrase-sub{
+        font-family: $fontHeading;
+        font-size: $text-4xl;
+        font-weight: bold;
+        color: $white;
+      }
+    }
+  }
+  .Mainvisual__noticeBox{
+    width: 100vw; height: 150px;
+    position: absolute;
+    bottom: 0;
+    background-color: $background;
+    .Mainvisual__container{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      .Mainvisual__notice{
+        width: 230px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .Mainvisual__notice-title{
+          font-family: $fontHeading;
+          font-size: $text-xl;
+          color: $secondary;
+          svg{
+            margin-bottom: -2px;
+            margin-right: 10px;
+            fill: $secondary;
+          }
+        }
+        .Mainvisual__notice-text{
+          margin-left: 25px;
+        }
+        .Mainvisual__notice-text-sub{
+          margin-left: 25px;
+          font-size: $text-sm;
+          color: $textSecondary;
+        }
+      }
+    }
+  }
+}

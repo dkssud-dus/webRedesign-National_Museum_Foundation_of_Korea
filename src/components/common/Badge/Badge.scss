@@ -1,0 +1,16 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Badge
+======================== */
+.Badge{
+  width: 75px; height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary;
+  color: $white;
+}

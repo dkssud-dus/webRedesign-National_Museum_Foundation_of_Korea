@@ -1,0 +1,81 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Search Box
+======================== */
+.SearchBox{
+  display: flex;
+  justify-content: space-between;
+  .SearchBox__inputBox{
+    position: relative;
+    .SearchBox__input-group{
+      .SearchBox__input{
+        width: 725px; height: 80px;
+        border-radius: 0;
+        border: 1px solid $primaryDefault;
+        background-color: $white;
+        color: $textPrimary;
+        font-size: $text-lg;
+        transition: .35s;
+        &::placeholder{
+          font-size: $text-lg;
+          color: $textSecondary
+        }
+        &:focus{
+          box-shadow: 0 0 2px 1px $primaryDefault;
+          &::placeholder{
+            color: transparent;
+          }
+        }
+      }
+    }
+    .SearchBox__search-button{
+      width: 40px; height: 40px;
+      position: absolute;
+      top: 50%; right: 20px; transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid $primaryDefault;
+      background-color: $white;
+      cursor: pointer;
+      transition: .35s;
+      svg{
+        font-size: $text-xl;
+        fill: $primaryDefault;
+        transition: .35s;
+      }
+      &:hover{
+        background-color: $primaryDefault;
+        svg{
+          fill: $white;
+        }
+      }
+    }
+  }
+  .SearchBox__dateFilter{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    .SearchBox__dateFilter-button{
+      width: 33%;
+      height: 80px;
+      background-color: $white;
+      font-size: $text-2xl;
+      transition: .35s;
+      cursor: pointer;
+      &.SearchBox__dateFilter-button--active{
+        background-color: $primaryDefault;
+        font-weight: bold;
+        color: $white;
+      }
+      &:hover{
+        color: $primaryDefault;
+      }
+    }
+  }
+}

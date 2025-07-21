@@ -1,0 +1,49 @@
+/* ========================
+  Import
+======================== */
+@import '../../styles/variables.scss';
+
+/* ========================
+  Notices
+======================== */
+.Notices{
+  margin-bottom: 10vh;
+  .Notices__container{
+    .Notices__searchBox{
+      display: flex;
+      justify-content: space-between;
+      .Notices__filtering{
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primaryDefault;
+        font-size: $text-2xl; font-weight: bold;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+    .Notices__content{
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .CategoryFilterGroup{
+        display: flex;
+        flex-direction: column;
+        .CategoryFilterGroup__button{
+          width: 200px;
+        }
+      }
+      .Notices__list{
+        height: 1000px;
+        width: 870px;
+      }
+      .Notices__no-results{
+        width: 870px;
+        margin-top: 100px;
+        text-align: center;
+      }
+    }
+  }
+}

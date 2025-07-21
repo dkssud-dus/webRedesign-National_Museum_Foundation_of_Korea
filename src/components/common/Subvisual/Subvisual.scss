@@ -1,0 +1,64 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Sub Visual
+======================== */
+.Subvisual{
+  width: 100vw;
+  height: 540px;
+  padding-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  .Subvisual__background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    &::after{
+      content: '';
+      width: 100%; height: 100%;
+      position: absolute;
+      top: 0; left: 0;
+      background-color: $blackOpacity50;
+    }
+    .Subvisual__background-image{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .Subvisual__symbol{
+    .Subvisual__symbol-image{
+      height: 75px;
+    }
+  }
+  .Subvisual__breadCrumb{
+    .Subvisual__breadCrumb-list{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .Subvisual__breadCrumb-item{
+        display: flex;
+        svg{
+          fill: $white;
+        }
+        .Subvisual__breadCrumb-link{
+          display: flex;
+          align-items: center;
+          color: $white;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

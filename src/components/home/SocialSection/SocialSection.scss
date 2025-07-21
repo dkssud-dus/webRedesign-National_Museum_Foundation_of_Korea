@@ -1,0 +1,109 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Social Section
+======================== */
+.Social{
+  height: 600px !important;
+  padding-top: 100px;
+  display: flex;
+  position: relative;
+  .Social__background{
+    height: 600px;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -10;
+    &::after{
+      content: '';
+      width: 100vw; height: 600px;
+      position: absolute;
+      top: 0; left: 0;
+      background-color: $blackOpacity50;
+    }
+    img{
+      width: 100vw; height: 100%;
+      object-fit: cover;
+    }
+  }
+  .Social__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Social__leftBox{
+      width: 50%;
+      .SectionTitle{
+        .SectionTitle__main{
+          color: $white;
+        }
+        .SectionTitle__sub{
+          color: $white;
+        }
+      }
+      .Social__link-list{
+        margin-top: 30px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .Social__link-item{
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          .Social__link-icon{
+            width: 50px; height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $white;
+            border-radius: 20px;
+            transition: .35s;
+            img{}
+          }
+          .Social__link-name{
+            strong{
+              font-family: $fontHeading;
+              font-size: $text-2xl;
+              font-weight: normal;
+              color: $white;
+            }
+          }
+          &:hover{
+            .Social__link-icon{
+              border: transparent;
+            }
+            .Social__link-name{
+              strong{
+                text-decoration: underline;
+              }
+            }
+            &:nth-child(1){
+              .Social__link-icon{
+                background-color: #3b5998;
+              }
+            }
+            &:nth-child(2){
+              .Social__link-icon{
+                background: linear-gradient(to right,
+                #833ab4,#fd1d1d,#fcb045);
+              }
+            }
+            &:nth-child(3){
+              .Social__link-icon{
+                background-color: #03C75A;
+              }
+            }
+            &:nth-child(4){
+              .Social__link-icon{
+                background-color: #CD201F;
+              }
+            }
+          }
+        }
+      }
+    }
+    .Social__rightBox{}
+  }
+}

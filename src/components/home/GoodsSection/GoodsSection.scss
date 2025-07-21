@@ -1,0 +1,78 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Goods Section
+======================== */
+.Goods{
+  display: flex;
+  .Goods__container{
+    .Goods__titleBox{
+      display: flex;
+    }
+    .Goods__contentBox{
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+      grid-auto-rows: 200px;
+      gap: 16px;
+      .Goods__item{
+        position: relative;
+        .Goods__item-imageBox{
+          width: 100%; height: 100%;
+          &::after{
+            opacity: 0;
+            content: '';
+            width: 100%; height: 100%;
+            position: absolute;
+            top: 0; left: 0;
+            background-color: $blackOpacity70;
+            transition: .35s;
+          }
+          .Goods__item-image{
+            width: 100%; height: 100%;
+            object-fit: cover;
+          }
+        }
+        .Goods__item-textBox{
+          opacity: 0;
+          width: 100%; height: 100%;
+          display: flex;
+          position: absolute;
+          top: 0; left: 0;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          z-index: 100;
+          text-align: center;
+          transition: .35s;
+          .Goods__item-name{
+            font-weight: normal;
+            color: $white;
+          }
+          .Goods__item-price{
+            font-size: $text-2xl;
+            font-weight: bold;
+            color: $white;
+          }
+        }
+        &:nth-child(3){
+          grid-column: span 2;
+          grid-row: span 2; 
+        }
+        &:hover{
+          .Goods__item-imageBox{
+            &::after{
+              opacity: 1;
+            }
+          }
+          .Goods__item-textBox{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

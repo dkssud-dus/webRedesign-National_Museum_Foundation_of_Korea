@@ -1,0 +1,51 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Events Card
+======================== */
+.EventsCard{
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &:hover{
+    .EventsCard__imageBox{
+      background-color: $primaryDefault;
+    }
+  }
+  .EventsCard__imageBox{
+    width: inherit; height: 280px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $primaryDefault;
+    transition: .35s;
+    img{
+      width: 245px; height: 245px;
+      object-fit: cover;
+    }
+  }
+  .EventsCard__textBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .EventsCard__title{
+        width: 70%;
+        display: -webkit-box;   
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        font-weight: normal;
+    }
+  }
+  .EventsCard__date{
+    margin-top: -10px;
+    font-size: $text-sm;
+    text-align: right;
+    color: $textSecondary;
+  }
+}

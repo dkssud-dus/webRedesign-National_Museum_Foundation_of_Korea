@@ -1,0 +1,39 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Notice List
+======================== */
+.NoticeList{
+  width: 100%; height: 455px;
+  margin-top: 25px;
+  border-top: 3px solid $primaryDeep;
+  border-bottom: 3px solid $primaryDeep;
+  .NoticeList__item{
+    height: 75px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .35s;
+    .NoticeList__item-title{
+      font-size: $text-xl;
+      font-weight: normal;
+    }
+    .NoticeList__item-date{
+      font-weight: $text-sm;
+      color: $textSecondary;
+    }
+    &:hover{
+      background-color: $primaryDefaultOpacity50;
+      .NoticeList__item-title{
+        color: $primaryDeep;
+      }
+      .NoticeList__item-date{
+        color: $white;
+      }
+    }
+  }
+}

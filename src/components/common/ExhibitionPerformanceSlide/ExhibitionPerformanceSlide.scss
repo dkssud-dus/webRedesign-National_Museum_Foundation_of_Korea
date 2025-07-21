@@ -1,0 +1,16 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Exhibition Performance Slide
+======================== */
+.swiper{
+  width: 630px;
+  .swiper-wrapper{
+    .swiper-slide{
+      &.swiper-slide-active{}
+    }
+  }
+}

@@ -1,0 +1,130 @@
+/* ========================
+  Import
+======================== */
+@import '../../../styles/variables.scss';
+
+/* ========================
+  Header
+======================== */
+.Header{
+  position: fixed;
+  top: 25px; left: 50%; transform: translateX(-50%);
+  z-index: 1000;
+  .Header__container{
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $white;
+    border-radius: 60px;
+    background-color: $whiteOpacity50;
+    backdrop-filter: blur(3px);
+    .Header__brand{
+      .Header__logo-link{
+        .Header__logo-image{
+          height: 25px;
+        }
+      }
+    }
+    .Header__nav{
+      height: 40px;
+      margin-left: auto;
+      margin-right: 10px;
+      padding: 0 2rem;
+      border-radius: 50px;
+      background-color: $white;
+      .Header__nav-link{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $primaryDefault;
+      }
+      .Header__nav-depth1{
+        display: flex;
+        gap: 30px;
+        > .Header__nav-item{
+          position: relative;
+          > .Header__nav-link{
+            font-size: $text-lg;
+          }
+          &.Header__nav-item--active{
+            .Header__nav-depth2{
+              max-height: 400px;
+              opacity: 1;
+              overflow: visible;
+              pointer-events: auto;
+            }
+          }
+          .Header__nav-depth2{
+            opacity: 0;
+            width: 115px;
+            max-height: 0;
+            padding: 1rem .5rem;
+            position: absolute;
+            top: 101%; left: 50%; 
+            transform: translateX(-50%);
+            z-index: 100;
+            background-color: $whiteOpacity90;
+            backdrop-filter: blur(1100px); 
+            border: 1px solid $white;
+            border-radius: 40px;
+            transition: .5s;
+            pointer-events: none;
+            .Header__nav-item{
+              .Header__nav-link{
+                color: $textPrimary;
+                transition: .35s;
+                &:hover{
+                  color: $primaryDeep;
+                  text-decoration: underline;
+                }
+                &.active{
+                  color: $primaryDeep;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .Header__actions{
+      display: flex;
+      gap: 10px;
+      .Header__action-button{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background-color: $white;
+        color: $primaryDefault;
+        cursor: pointer;
+        transition: .35s;
+        &.Header__action-button--login{
+          width: 110px;
+          font-size: $text-lg;
+        }
+        &.Header__action-button--globe{
+          font-size: $text-lg;
+        }
+        &.Header__action-button--menu{
+          font-size: $text-2xl;
+        }
+        svg{
+          fill: $primaryDefault;
+          transition: .35s;
+        }
+        &:hover{
+          background-color: $primaryDefault;
+          color: $white;
+          svg{
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+}
