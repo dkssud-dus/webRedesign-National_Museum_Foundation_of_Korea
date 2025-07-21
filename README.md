@@ -1,70 +1,167 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+`#RedesignProject` `#GovernmentWebsite` `#Solo` `#DesktopOnly` 
+# **Website Redesign Project:**
+### 국립박물관문화재단 National Museum Foundation of Korea
 
-## Available Scripts
+<br/>
+<br/>
+<br/>
 
-In the project directory, you can run:
+**김채연, Kim chae yeon**    
 
-### `npm start`
+<br/>
+<br/>
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Schedule**
+**2025.07.10. - 2025.07.20. (Total 35 hours)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</br>
 
-### `npm test`
+| Phase         | Date Range                  |
+|---------------|-----------------------------|
+| Planning      | 2025.07.10. – 2025.07.10.   |
+| Design        | 2025.07.10. – 2025.07.14.   |
+| Development   | 2025.07.14. – 2025.07.20.   |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
+<br/>
+<br/>
 
-### `npm run build`
+## Table of Contents
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. [Before & After Preview](#1-Before-&-After-Preview)   
+2. [Work Environment](#2-Work-Environment)   
+3. [Read Project Details in Other Languages](#3-Read-Project-Details-in-Other-Languages)    
+4. [Resources](#4-Resources)   
+   
+</br>
+</br>
+</br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 1. Before & After Preview
+### 1.1. Main Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Before | After |
+|--------|-------|
+| 이미지 | 이미지  |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+</br>
+</br>
+</br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1.2. Sub Pages (6)
+<details>
+<summary>📂 View more Pages</summary>
 
-## Learn More
+#### 1.2.1. 서브 페이지 이름
+| Before | After |
+|--------|-------|
+| 이미지 | 이미지  |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+</br>
+</br>
+</br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+</details>
 
-### Code Splitting
+</br>
+</br>
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
+## 2. Work Environment
+### 2.1. Tools
+1. Notion: Planner
+2. Figma: Design
+3. VS Code
 
-### Analyzing the Bundle Size
+</br>
+</br>
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 2.2. Tech Stack
+1. REACT.js     
+   1.1. React Router    
+   1.2. React Swiper    
+   1.3. React Calendar   
+   1.4. React Bootstrap Icons  
+2. SCSS   
 
-### Making a Progressive Web App
+</br>
+</br>
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 2.3. Viewport
+1. 1980 X 1080
 
-### Advanced Configuration
+</br>
+</br>
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 2.4. OS
+1. Windows 11
+2. Windows 10
 
-### Deployment
+</br>
+</br>
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+</br>
+</br>
+</br>
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 3. Read Project Details in Other Languages
+1. English
+2. 한국어
+3. 日本語
+
+</br>
+</br>
+</br>
+
+---
+
+## 4. Resources
+### 4.1. Project Brief
+1. Figma
+
+</br>
+</br>
+</br>
+
+### 4.2. Design Brief
+1. Figma
+
+</br>
+</br>
+</br>
+
+### 4.3. Site URL
+#### 4.3.1. Main Page
+1. [Main Page](https://dainty-zabaione-f6aaff.netlify.app/)
+
+</br>
+</br>
+</br>
+
+#### 4.3.2. Sub Pages (6)
+1. [Directions](https://dainty-zabaione-f6aaff.netlify.app/directions)
+2. [Exhibition & Performances](https://dainty-zabaione-f6aaff.netlify.app/exhibitionPerformance)
+3. [Schedule](https://dainty-zabaione-f6aaff.netlify.app/schedule)
+4. [Events](https://dainty-zabaione-f6aaff.netlify.app/events)
+5. [Notices](https://dainty-zabaione-f6aaff.netlify.app/notices)
+6. [404 (Error)](https://dainty-zabaione-f6aaff.netlify.app/*)
+
+</br>
+</br>
+</br>
+
+---
