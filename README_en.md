@@ -510,10 +510,6 @@ The National Museum Foundation of Korea is a Korean institution that plans and d
 
 <br/>
 
-> Description
-
-<br/>
-
 ## Contact
 - GitHub: https://github.com/dkssud-dus
 - Email: chae3929@gmail.com
