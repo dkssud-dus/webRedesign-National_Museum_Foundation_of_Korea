@@ -511,10 +511,6 @@
 
 <br/>
 
-> Description
-
-<br/>
-
 ## Contact
 - GitHub: https://github.com/dkssud-dus
 - Email: chae3929@gmail.com
